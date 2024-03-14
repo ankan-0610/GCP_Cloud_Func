@@ -36,12 +36,11 @@ func firewallRuleExists(ctx context.Context, projectID, firewallName string) (bo
 	return true, nil
 }
 
-
 // createInstance sends an instance creation request to the Compute Engine API and waits for it to complete.
 func createInstance(w io.Writer) error {
         projectID := "cloudsec-390404"
 		zone := "us-east4-c" // Change this to your desired zone
-		instanceName := "test-vm-inst-1"
+		instanceName := "test-vm-inst-2"
 		machineType := "n1-standard-1" // Change this to your desired machine type
         sourceImage := "projects/cloudsec-390404/global/images/image-1"
         networkName := "global/networks/default"
